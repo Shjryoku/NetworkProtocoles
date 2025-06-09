@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/client.c.o CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/main.c.o CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/server.c.o CMakeFiles/NetworkProtocoles.dir/TCPProtocole/tcp.c.o -o NetworkProtocoles 

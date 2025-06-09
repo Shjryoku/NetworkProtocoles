@@ -1,0 +1,3 @@
+/home/batspine/Projects/NetworkProtocoles/build/CMakeFiles/NetworkProtocoles.dir
+/home/batspine/Projects/NetworkProtocoles/build/CMakeFiles/edit_cache.dir
+/home/batspine/Projects/NetworkProtocoles/build/CMakeFiles/rebuild_cache.dir
