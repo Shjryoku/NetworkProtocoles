@@ -9,8 +9,11 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 
-#define PORT 8080       //PORT of server
-#define BACKLOG 10      //Queue size
+#include "../TCPProtocole/tcp.h"
+
+#define PORT 8080                   // PORT of server
+#define BACKLOG 10                  // Queue size
+#define MESSAGE_BUFFER_SIZE 2048    // Message size
 
 
 #endif
