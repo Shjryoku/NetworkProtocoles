@@ -13,9 +13,5 @@ add_executable(NetworkProtocoles
     HttpsProtocole/client.c
     HttpsProtocole/main.c
     HttpsProtocole/server.c
-    HttpsProtocole/main_header.h
-    HttpsProtocole/client.h
-    HttpsProtocole/server.h
-    TCPProtocole/tcp.h
     TCPProtocole/tcp.c
 )
