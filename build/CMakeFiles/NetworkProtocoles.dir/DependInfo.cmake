@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/batspine/Projects/NetworkProtocoles/HttpsProtocole/main.c" "CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/main.c.o" "gcc" "CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/main.c.o.d"
   "/home/batspine/Projects/NetworkProtocoles/HttpsProtocole/server.c" "CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/server.c.o" "gcc" "CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/server.c.o.d"
   "/home/batspine/Projects/NetworkProtocoles/TCPProtocole/tcp.c" "CMakeFiles/NetworkProtocoles.dir/TCPProtocole/tcp.c.o" "gcc" "CMakeFiles/NetworkProtocoles.dir/TCPProtocole/tcp.c.o.d"
+  "/home/batspine/Projects/NetworkProtocoles/UDPProtocole/udp.c" "CMakeFiles/NetworkProtocoles.dir/UDPProtocole/udp.c.o" "gcc" "CMakeFiles/NetworkProtocoles.dir/UDPProtocole/udp.c.o.d"
   )
 
 # Targets to which this target links.

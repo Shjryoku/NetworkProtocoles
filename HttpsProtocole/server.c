@@ -55,11 +55,11 @@ int tcp_server_write(int client_socket){
                     "Content-Length: 13\r\n"
                     "\r\n";
     
-    ssize_t total_written = 0;
-    ssize_t to_write = strlen(response);
+    short int total_written = 0;
+    short int to_write = strlen(response);
 
     while(total_written < to_write){
-        ssize_t writen = write(client_socket, response + total_written, to_write - total_written);
+        short int writen = write(client_socket, response + total_written, to_write - total_written);
         if(writen < 0){
             perror("Write error");
             break;

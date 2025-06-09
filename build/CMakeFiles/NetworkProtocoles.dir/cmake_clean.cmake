@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/server.c.o.d"
   "CMakeFiles/NetworkProtocoles.dir/TCPProtocole/tcp.c.o"
   "CMakeFiles/NetworkProtocoles.dir/TCPProtocole/tcp.c.o.d"
+  "CMakeFiles/NetworkProtocoles.dir/UDPProtocole/udp.c.o"
+  "CMakeFiles/NetworkProtocoles.dir/UDPProtocole/udp.c.o.d"
   "NetworkProtocoles"
   "NetworkProtocoles.pdb"
 )

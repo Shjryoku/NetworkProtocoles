@@ -225,6 +225,30 @@ TCPProtocole/tcp.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkProtocoles.dir/build.make CMakeFiles/NetworkProtocoles.dir/TCPProtocole/tcp.c.s
 .PHONY : TCPProtocole/tcp.c.s
 
+UDPProtocole/udp.o: UDPProtocole/udp.c.o
+.PHONY : UDPProtocole/udp.o
+
+# target to build an object file
+UDPProtocole/udp.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkProtocoles.dir/build.make CMakeFiles/NetworkProtocoles.dir/UDPProtocole/udp.c.o
+.PHONY : UDPProtocole/udp.c.o
+
+UDPProtocole/udp.i: UDPProtocole/udp.c.i
+.PHONY : UDPProtocole/udp.i
+
+# target to preprocess a source file
+UDPProtocole/udp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkProtocoles.dir/build.make CMakeFiles/NetworkProtocoles.dir/UDPProtocole/udp.c.i
+.PHONY : UDPProtocole/udp.c.i
+
+UDPProtocole/udp.s: UDPProtocole/udp.c.s
+.PHONY : UDPProtocole/udp.s
+
+# target to generate assembly for a file
+UDPProtocole/udp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkProtocoles.dir/build.make CMakeFiles/NetworkProtocoles.dir/UDPProtocole/udp.c.s
+.PHONY : UDPProtocole/udp.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -246,6 +270,9 @@ help:
 	@echo "... TCPProtocole/tcp.o"
 	@echo "... TCPProtocole/tcp.i"
 	@echo "... TCPProtocole/tcp.s"
+	@echo "... UDPProtocole/udp.o"
+	@echo "... UDPProtocole/udp.i"
+	@echo "... UDPProtocole/udp.s"
 .PHONY : help
 
 

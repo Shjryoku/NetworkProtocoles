@@ -10,6 +10,7 @@
 #include <arpa/inet.h>
 
 #include "../TCPProtocole/tcp.h"
+#include "../UDPProtocole/udp.h"
 #include "server.h"
 #include "client.h"
 

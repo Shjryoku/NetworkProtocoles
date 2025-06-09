@@ -81,12 +81,12 @@ clean: CMakeFiles/NetworkProtocoles.dir/clean
 CMakeFiles/NetworkProtocoles.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkProtocoles.dir/build.make CMakeFiles/NetworkProtocoles.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkProtocoles.dir/build.make CMakeFiles/NetworkProtocoles.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/batspine/Projects/NetworkProtocoles/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target NetworkProtocoles"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/batspine/Projects/NetworkProtocoles/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target NetworkProtocoles"
 .PHONY : CMakeFiles/NetworkProtocoles.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NetworkProtocoles.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/batspine/Projects/NetworkProtocoles/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/batspine/Projects/NetworkProtocoles/build/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NetworkProtocoles.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/batspine/Projects/NetworkProtocoles/build/CMakeFiles 0
 .PHONY : CMakeFiles/NetworkProtocoles.dir/rule

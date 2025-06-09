@@ -4,4 +4,7 @@
 
 inline int tcp_server_read();
 inline int tcp_server_write(int);
+
+inline int udp_server_read();
+inline int udp_server_write(int);
 #endif

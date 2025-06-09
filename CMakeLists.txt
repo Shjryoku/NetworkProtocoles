@@ -14,4 +14,5 @@ add_executable(NetworkProtocoles
     HttpsProtocole/main.c
     HttpsProtocole/server.c
     TCPProtocole/tcp.c
+    UDPProtocole/udp.c
 )
