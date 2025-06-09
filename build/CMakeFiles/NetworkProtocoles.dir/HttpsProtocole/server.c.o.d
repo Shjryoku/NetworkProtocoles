@@ -49,4 +49,6 @@ CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/server.c.o: \
  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
  /usr/include/arpa/inet.h \
  /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/../TCPProtocole/tcp.h \
- /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/../TCPProtocole/../HttpsProtocole/main_header.h
+ /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/../TCPProtocole/../HttpsProtocole/main_header.h \
+ /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/server.h \
+ /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/client.h
