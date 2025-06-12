@@ -16,7 +16,7 @@
 
 #define PORT 8080                   // PORT of server
 #define BACKLOG 10                  // Queue size
-#define MESSAGE_BUFFER_SIZE 2048    // Message size
+#define MESSAGE_BUFFER_SIZE 256     // Message size
 #define ADDRESS "127.0.0.1"         // Server address
 
 #endif

@@ -51,6 +51,7 @@ CMakeFiles/NetworkProtocoles.dir/UDPProtocole/udp.c.o: \
  /usr/include/arpa/inet.h \
  /home/batspine/Projects/NetworkProtocoles/UDPProtocole/../HttpsProtocole/../TCPProtocole/tcp.h \
  /home/batspine/Projects/NetworkProtocoles/UDPProtocole/../HttpsProtocole/../TCPProtocole/../HttpsProtocole/main_header.h \
+ /home/batspine/Projects/NetworkProtocoles/UDPProtocole/../HttpsProtocole/../UDPProtocole/udp.h \
  /home/batspine/Projects/NetworkProtocoles/UDPProtocole/../HttpsProtocole/server.h \
  /home/batspine/Projects/NetworkProtocoles/UDPProtocole/../HttpsProtocole/main_header.h \
  /home/batspine/Projects/NetworkProtocoles/UDPProtocole/../HttpsProtocole/client.h

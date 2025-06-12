@@ -32,6 +32,8 @@ int tcp_client_interactive(){
 }
 
 int udp_client_interactive(){
+    udp_server_len = sizeof(udp_server_addr);
+
     char send_buffer[MESSAGE_BUFFER_SIZE];
     char read_buffer[MESSAGE_BUFFER_SIZE];
 
@@ -40,9 +42,10 @@ int udp_client_interactive(){
         printf("Enter request: ");
         if(!fgets(send_buffer, MESSAGE_BUFFER_SIZE, stdin)) break;
 
-        short int sent = write(udp_client_socket, send_buffer, strlen(send_buffer));
+        short int sent = sendto(udp_client_socket, send_buffer, strlen(send_buffer), 0, (struct sockaddr*)&udp_server_addr, udp_server_len);
 
-        short int received = read(udp_client_socket, read_buffer, sizeof(read_buffer) - 1);
+        short int received = recv(udp_client_socket, read_buffer, MESSAGE_BUFFER_SIZE - 1, 0);
+
         read_buffer[received] = '\0';
         printf("Server answer:\n%s\n", read_buffer);
     }

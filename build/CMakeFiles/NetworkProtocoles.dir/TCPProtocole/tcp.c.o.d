@@ -50,6 +50,8 @@ CMakeFiles/NetworkProtocoles.dir/TCPProtocole/tcp.c.o: \
  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
  /usr/include/arpa/inet.h \
  /home/batspine/Projects/NetworkProtocoles/TCPProtocole/../HttpsProtocole/../TCPProtocole/tcp.h \
+ /home/batspine/Projects/NetworkProtocoles/TCPProtocole/../HttpsProtocole/../UDPProtocole/udp.h \
+ /home/batspine/Projects/NetworkProtocoles/TCPProtocole/../HttpsProtocole/../UDPProtocole/../HttpsProtocole/main_header.h \
  /home/batspine/Projects/NetworkProtocoles/TCPProtocole/../HttpsProtocole/server.h \
  /home/batspine/Projects/NetworkProtocoles/TCPProtocole/../HttpsProtocole/main_header.h \
  /home/batspine/Projects/NetworkProtocoles/TCPProtocole/../HttpsProtocole/client.h

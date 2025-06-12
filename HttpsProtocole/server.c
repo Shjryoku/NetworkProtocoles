@@ -27,7 +27,7 @@ int tcp_server_read(){
             printf("Enter response: \n");
             fflush(stdout);
 
-            if(fgets(response_buffer, sizeof(response_buffer), stdin) == NULL) break;
+            if(fgets(response_buffer, MESSAGE_BUFFER_SIZE, stdin) == NULL) break;
 
             size_t len = strlen(response_buffer);
 
@@ -49,25 +49,36 @@ int tcp_server_read(){
     return 0;
 }
 
-int tcp_server_write(int client_socket){
-    char response[] = "HTTP/1.1 200 OK\r\n"
-                    "Content-Type: text/html\r\n"
-                    "Content-Length: 13\r\n"
-                    "\r\n";
-    
-    short int total_written = 0;
-    short int to_write = strlen(response);
+int udp_server_read(){
+    udp_client_len = sizeof(udp_client_addr);
 
-    while(total_written < to_write){
-        short int writen = write(client_socket, response + total_written, to_write - total_written);
-        if(writen < 0){
-            perror("Write error");
-            break;
+    // Reading cycle
+    while(1){
+        printf("\nWaiting for new connect...\n");
+
+        char buffer[MESSAGE_BUFFER_SIZE] = {0};
+        ssize_t bytes_read;
+        while ((bytes_read = recvfrom(udp_server_socket, buffer, MESSAGE_BUFFER_SIZE - 1, 0, (struct sockaddr*)&udp_client_addr, &udp_client_len)) > 0)
+        {
+            buffer[bytes_read] = '\0';
+            printf("Received from %s: %s\n", inet_ntoa(udp_client_addr.sin_addr), buffer);
+
+            char response_buffer[MESSAGE_BUFFER_SIZE];
+            printf("Enter response: \n");
+            fflush(stdout);
+
+            if(fgets(response_buffer, MESSAGE_BUFFER_SIZE, stdin) == NULL) break;
+
+            size_t len = strlen(response_buffer);
+            if(len > 0 && response_buffer[len - 1] == '\n')
+                response_buffer[len - 1] = '\0';
+
+            unsigned int bytes_sent = sendto(udp_server_socket, response_buffer, strlen(response_buffer), 0, (struct sockaddr*)&udp_client_addr, udp_client_len);
+            if(bytes_sent < 0){
+                perror("sendto error");
+            }
         }
-        total_written += writen;
     }
-
-    close(client_socket);
 
     return 0;
 }
