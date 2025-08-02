@@ -1,6 +1,16 @@
 #include "main_header.h"
+#include "../ICMP/icmp.h"
 
 int main(int argc, char *argv[]) {
+    init_icmp();
+
+    for (int i = 1; i <= 4; i++) {
+        send_icmp_echo(i);
+        reply_icmp_echo(i);
+        sleep(1);
+    }
+
+    /*
     if (argc < 3) {
         fprintf(stderr, "Usage: %s [server|client] %s [tcp|udp]\n", argv[0]);
         exit(EXIT_FAILURE);
@@ -26,6 +36,7 @@ int main(int argc, char *argv[]) {
         fprintf(stderr, "Unknown mode: %s\n", argv[1]);
         exit(EXIT_FAILURE);
     }
+    */
 
     return 0;
 }

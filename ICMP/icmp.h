@@ -2,13 +2,15 @@
 #define ICMP_H
 #include <sys/socket.h>
 #include <netinet/in.h>
+#include <netinet/ip.h>
 #include <arpa/inet.h>
 #include <stdio.h>
 #include <stdint.h>
 #include <unistd.h>
 #include <sys/time.h>
+#include <time.h>
 
-int icmp_socket;
+extern int icmp_socket;
 
 struct icmp_hdr{
     uint8_t type;                           // Message type ICMP - 1b
@@ -31,4 +33,7 @@ struct icmp_packet {                        // ICMP Packet (ping for example)
 void init_icmp();
 void send_icmp_echo(uint8_t);
 void reply_icmp_echo(uint8_t);
+
+// Checksum method (RFC 1071)
+uint16_t checksum(const void*, size_t);
 #endif

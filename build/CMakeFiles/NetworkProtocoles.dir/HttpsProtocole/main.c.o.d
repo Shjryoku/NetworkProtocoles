@@ -53,4 +53,18 @@ CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/main.c.o: \
  /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/../UDPProtocole/udp.h \
  /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/../UDPProtocole/../HttpsProtocole/main_header.h \
  /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/server.h \
- /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/client.h
+ /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/client.h \
+ /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/../ICMP/icmp.h \
+ /usr/include/netinet/ip.h \
+ /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/sys/time.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+ /usr/include/time.h /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h
