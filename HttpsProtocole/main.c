@@ -1,7 +1,21 @@
 #include "main_header.h"
 #include "../ICMP/icmp.h"
+#include "../BasicFirewall/firewall.h"
+#include <signal.h>
+
+void signal_handler(int sig) {
+    printf("\nCaught signal %d, cleaning up...\n", sig);
+    cleanup();
+    exit(0);
+}
+
 
 int main(int argc, char *argv[]) {
+    signal(SIGINT, signal_handler);  // Ctrl+C
+    signal(SIGTERM, signal_handler); // Kill
+    init_firewall();
+    read_all_packets();
+
     init_icmp();
 
     for (int i = 1; i <= 4; i++) {
@@ -37,6 +51,8 @@ int main(int argc, char *argv[]) {
         exit(EXIT_FAILURE);
     }
     */
+   
+    cleanup();
 
     return 0;
 }

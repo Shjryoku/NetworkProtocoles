@@ -1,6 +1,7 @@
 #ifndef MAIN_HEADER_H
 #define MAIN_HEADER_H
 #include <stdio.h>
+#include <stdint.h>
 #include <stdlib.h>
 #include <string.h>
 #include <unistd.h>
@@ -8,6 +9,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+#include <netinet/ip.h>
 
 #include "../TCPProtocole/tcp.h"
 #include "../UDPProtocole/udp.h"

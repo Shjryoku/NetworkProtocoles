@@ -1,4 +1,6 @@
 #include "icmp.h"
+#include <sys/time.h>
+#include <time.h>
 
 int icmp_socket;
 
@@ -19,7 +21,7 @@ uint16_t checksum(const void* data, size_t length){
     sum = (sum >> 16) + (sum & 0xFFFF);                             // Add transfer
     sum += (sum >> 16);                                             // For new overflow
 
-    printf("Checksum: 0x%04X\n", sum);
+    printf("Sended packet checksum: 0x%04X\n", sum);
     return (uint16_t)(~sum);
 }
 
@@ -47,7 +49,7 @@ void send_icmp_echo(uint8_t seq){
     packet.header.code = 0;                                         // Echo Reply code
     packet.header.echo.id = htons(getpid());                        // Set ICMP echo id by PID
     packet.header.echo.seq = htons(seq);                            // Set ICMP echo sequence by given sequence
-    packet.timestamp = htonl(time(NULL));                                  // Get current Unix Time
+    packet.timestamp = htonl(time(NULL));                           // Get current Unix Time
 
 
     // Calculating checksum
@@ -118,14 +120,28 @@ void reply_icmp_echo(uint8_t seq){
             uint32_t timestamp_host = ntohl(timestamp_net);
             double rtt = difftime(now, timestamp_host);
 
+            // Verify checksum
+            uint16_t saved_checksum = reply->checksum;
+            reply->checksum = 0;
+            uint16_t calculated_checksum = checksum(reply, received - ip_header_len);
+            if(saved_checksum != calculated_checksum) {
+                fprintf(stderr, "Checksum mismatch! Packet corrupted.\n");
+                continue;
+            }
+
+            // Only process our packets
+            if(recv_id != (uint16_t)getpid()) {
+                continue;
+            }
+
             switch (reply->type) {
-            case 0:                                                       // Echo Reply
+            case ICMP_ECHOREPLY:                                                        // Echo Reply
                 printf("Answer from %s: \nSequence: %d \nTime: %.2f ms\n",
                 inet_ntoa(sender.sin_addr),
                 recv_seq,
                 rtt * 1000);
                 break;
-            case 3:                                                        // Destination Unreachable
+            case ICMP_DEST_UNREACH:                                                     // Destination Unreachable
                 switch (reply->code)
                 {
                 case 0:
@@ -145,7 +161,7 @@ void reply_icmp_echo(uint8_t seq){
                     break;
                 }
                 break;
-            case 11:                                                       // Time Exceeded (TTL Expired)
+            case ICMP_TIME_EXCEEDED:                                                    // Time Exceeded (TTL Expired)
                 fprintf(stderr, "Time exceeded (TTL expired).\n");
                 break;
             default:
