@@ -129,6 +129,30 @@ NetworkProtocoles/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkProtocoles.dir/build.make CMakeFiles/NetworkProtocoles.dir/build
 .PHONY : NetworkProtocoles/fast
 
+BasicFirewall/firewall.o: BasicFirewall/firewall.c.o
+.PHONY : BasicFirewall/firewall.o
+
+# target to build an object file
+BasicFirewall/firewall.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkProtocoles.dir/build.make CMakeFiles/NetworkProtocoles.dir/BasicFirewall/firewall.c.o
+.PHONY : BasicFirewall/firewall.c.o
+
+BasicFirewall/firewall.i: BasicFirewall/firewall.c.i
+.PHONY : BasicFirewall/firewall.i
+
+# target to preprocess a source file
+BasicFirewall/firewall.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkProtocoles.dir/build.make CMakeFiles/NetworkProtocoles.dir/BasicFirewall/firewall.c.i
+.PHONY : BasicFirewall/firewall.c.i
+
+BasicFirewall/firewall.s: BasicFirewall/firewall.c.s
+.PHONY : BasicFirewall/firewall.s
+
+# target to generate assembly for a file
+BasicFirewall/firewall.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NetworkProtocoles.dir/build.make CMakeFiles/NetworkProtocoles.dir/BasicFirewall/firewall.c.s
+.PHONY : BasicFirewall/firewall.c.s
+
 HttpsProtocole/client.o: HttpsProtocole/client.c.o
 .PHONY : HttpsProtocole/client.o
 
@@ -282,6 +306,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... NetworkProtocoles"
+	@echo "... BasicFirewall/firewall.o"
+	@echo "... BasicFirewall/firewall.i"
+	@echo "... BasicFirewall/firewall.s"
 	@echo "... HttpsProtocole/client.o"
 	@echo "... HttpsProtocole/client.i"
 	@echo "... HttpsProtocole/client.s"

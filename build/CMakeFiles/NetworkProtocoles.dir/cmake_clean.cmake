@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/NetworkProtocoles.dir/BasicFirewall/firewall.c.o"
+  "CMakeFiles/NetworkProtocoles.dir/BasicFirewall/firewall.c.o.d"
   "CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/client.c.o"
   "CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/client.c.o.d"
   "CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/main.c.o"

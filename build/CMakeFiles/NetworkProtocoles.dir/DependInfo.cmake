@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/batspine/Projects/NetworkProtocoles/BasicFirewall/firewall.c" "CMakeFiles/NetworkProtocoles.dir/BasicFirewall/firewall.c.o" "gcc" "CMakeFiles/NetworkProtocoles.dir/BasicFirewall/firewall.c.o.d"
   "/home/batspine/Projects/NetworkProtocoles/HttpsProtocole/client.c" "CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/client.c.o" "gcc" "CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/client.c.o.d"
   "/home/batspine/Projects/NetworkProtocoles/HttpsProtocole/main.c" "CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/main.c.o" "gcc" "CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/main.c.o.d"
   "/home/batspine/Projects/NetworkProtocoles/HttpsProtocole/server.c" "CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/server.c.o" "gcc" "CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/server.c.o.d"

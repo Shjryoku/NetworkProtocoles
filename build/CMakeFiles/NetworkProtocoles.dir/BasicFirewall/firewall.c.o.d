@@ -1,7 +1,8 @@
-CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/main.c.o: \
- /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/main.c \
+CMakeFiles/NetworkProtocoles.dir/BasicFirewall/firewall.c.o: \
+ /home/batspine/Projects/NetworkProtocoles/BasicFirewall/firewall.c \
  /usr/include/stdc-predef.h \
- /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/main_header.h \
+ /home/batspine/Projects/NetworkProtocoles/BasicFirewall/firewall.h \
+ /home/batspine/Projects/NetworkProtocoles/BasicFirewall/../HttpsProtocole/main_header.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -49,16 +50,13 @@ CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/main.c.o: \
  /usr/include/x86_64-linux-gnu/bits/byteswap.h \
  /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
  /usr/include/arpa/inet.h /usr/include/netinet/ip.h \
- /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/../TCPProtocole/tcp.h \
- /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/../TCPProtocole/../HttpsProtocole/main_header.h \
- /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/../UDPProtocole/udp.h \
- /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/../UDPProtocole/../HttpsProtocole/main_header.h \
- /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/server.h \
- /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/client.h \
- /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/../ICMP/icmp.h \
- /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/../ICMP/../HttpsProtocole/main_header.h \
- /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/../BasicFirewall/firewall.h \
- /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/../BasicFirewall/../HttpsProtocole/main_header.h \
+ /home/batspine/Projects/NetworkProtocoles/BasicFirewall/../HttpsProtocole/../TCPProtocole/tcp.h \
+ /home/batspine/Projects/NetworkProtocoles/BasicFirewall/../HttpsProtocole/../TCPProtocole/../HttpsProtocole/main_header.h \
+ /home/batspine/Projects/NetworkProtocoles/BasicFirewall/../HttpsProtocole/../UDPProtocole/udp.h \
+ /home/batspine/Projects/NetworkProtocoles/BasicFirewall/../HttpsProtocole/../UDPProtocole/../HttpsProtocole/main_header.h \
+ /home/batspine/Projects/NetworkProtocoles/BasicFirewall/../HttpsProtocole/server.h \
+ /home/batspine/Projects/NetworkProtocoles/BasicFirewall/../HttpsProtocole/main_header.h \
+ /home/batspine/Projects/NetworkProtocoles/BasicFirewall/../HttpsProtocole/client.h \
  /usr/include/linux/if_ether.h /usr/include/linux/types.h \
  /usr/include/x86_64-linux-gnu/asm/types.h \
  /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
@@ -81,9 +79,5 @@ CMakeFiles/NetworkProtocoles.dir/HttpsProtocole/main.c.o: \
  /usr/include/x86_64-linux-gnu/asm/byteorder.h \
  /usr/include/linux/byteorder/little_endian.h /usr/include/linux/swab.h \
  /usr/include/x86_64-linux-gnu/asm/swab.h /usr/include/linux/udp.h \
- /home/batspine/Projects/NetworkProtocoles/HttpsProtocole/../BasicFirewall/../ICMP/icmp.h \
- /usr/include/signal.h \
- /usr/include/x86_64-linux-gnu/bits/signum-generic.h \
- /usr/include/x86_64-linux-gnu/bits/signum-arch.h \
- /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h \
- /usr/include/x86_64-linux-gnu/bits/signal_ext.h
+ /home/batspine/Projects/NetworkProtocoles/BasicFirewall/../ICMP/icmp.h \
+ /home/batspine/Projects/NetworkProtocoles/BasicFirewall/../ICMP/../HttpsProtocole/main_header.h
